@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario Trabajadores</title>
+<style> /* Esta etiqueta sirve para incluir código CSS */
+table {
+	background: #FF6;
+	border-color: green;
+}
+</style>
+</head>
+<body bgcolor="#FFA07A"> <!-- Aca se esta cambiando el color del body con el atributo bgcolor. -->
+	<center>
+		<font color="blue"><h1>Ingresar trabajador</h1></font>
+	</center>
+
+	<center>
+		<nav>
+			<p>
+				<a href="index.html">Inicio</a> <a href="formulario_trabajador.html">Agregar</a>
+			</p>
+		</nav>
+	</center>
+
+	<form action="TrabajadorControlador" method="GET">
+		<table border="20"> <!-- Aca se esta añadiendo un borde de 20 pixeles, se utiliza una tabla para que quede todo mas ordenado. -->
+			<tr>
+				<td><label for="nombre">Nombre</label></td>
+				<td><input type="text" name="nombre" id="nombre" required></td> <!-- Utilizando la clausula required, se obliga al usuario a ingresar los datos. -->		
+			</tr>
+			<tr>
+				<td><label for="apellido">Apellido</label></td>
+				<td><input type="text" name="apellido" id="apellido" required></td> <!-- Utilizando la clausula required, se obliga al usuario a ingresar los datos. -->	
+			</tr>
+			<tr>
+				<td><label for="edad">Edad</label></td>
+				<td><input type="number" min="18" max="150" name="edad" id="edad" required></td> <!-- Utilizando la clausula required, se obliga al usuario a ingresar los datos. -->	
+			</tr>
+			<tr>
+				<td><label for="pais">País</label></td>
+				<td>
+					<select name="pais" id="pais"> <!-- Se crea un elemento select, para desplegar un menu con opciones de paises. -->					
+						<option>Chile</option>
+						<option>Perú</option>
+						<option>Argentina</option>
+						<option>México</option>
+						<option>Colombia</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Tecnología</td>
+				<td>
+					<label><input type="radio" name="tecnologia" value="Java" id="tecnologia_0" required>Java</label><br/> 
+					<label><input type="radio" name="tecnologia" value="PHP" id="tecnologia_1" required>PHP</label><br/> 
+					<label><input type="radio" name="tecnologia" value="JavaScript" id="tecnologia_2" required>JavaScript</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Experiencia</td>
+				<td>
+					<select name="experiencia" id="experiencia" required>
+						<option>Junior</option>
+						<option>Semi-Senior</option>
+						<option>Senior</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Comentario</td>
+				<td><textarea name="comentario" id="comentario" required></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit"name="button" id="button" value="Enviar"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
