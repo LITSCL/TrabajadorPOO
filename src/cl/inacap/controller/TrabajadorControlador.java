@@ -50,13 +50,13 @@ public class TrabajadorControlador extends HttpServlet {
 				tr.setComentario(comentario);
 				tr.setExperiencia(experiencia);
 				
-				//3. Se a�ade el objeto a la lista.			
+				//3. Se añade el objeto a la lista.			
 				TrabajadorDAO daoTrabajadores = new TrabajadorDAO();
-				daoTrabajadores.save(tr); //Se a�ade el objeto a su respectivo Modelo.
+				daoTrabajadores.save(tr); //Se añade el objeto a su respectivo Modelo.
 				List<Trabajador> listaTrabajadores = daoTrabajadores.getAll(); //Aca se trae la lista.
 				
 				request.setAttribute("listaTrabajadores", listaTrabajadores);
-				request.getRequestDispatcher("vista_trabajador.jsp").forward(request, response); //Aca se utiliza la interfaz RequestDispatcher para indicar a donde enviar los datos y el m�todo forward para enviar los datos.
+				request.getRequestDispatcher("vista_trabajador.jsp").forward(request, response); //Aca se utiliza la interfaz RequestDispatcher para indicar a donde enviar los datos y el método forward para enviar los datos.
 	}
 
 	/**

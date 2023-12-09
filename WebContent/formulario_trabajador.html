@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Formulario Trabajadores</title>
-<style> /* Esta etiqueta sirve para incluir c�digo CSS */
+<style> /* Esta etiqueta sirve para incluir código CSS */
 table {
 	background: #FF6;
 	border-color: green;
@@ -24,7 +24,7 @@ table {
 	</center>
 
 	<form action="TrabajadorControlador" method="GET">
-		<table border="20"> <!-- Aca se esta a�adiendo un borde de 20 pixeles, se utiliza una tabla para que quede todo mas ordenado. -->
+		<table border="20"> <!-- Aca se esta añadiendo un borde de 20 pixeles, se utiliza una tabla para que quede todo mas ordenado. -->
 			<tr>
 				<td><label for="nombre">Nombre</label></td>
 				<td><input type="text" name="nombre" id="nombre" required></td> <!-- Utilizando la clausula required, se obliga al usuario a ingresar los datos. -->		
@@ -38,19 +38,19 @@ table {
 				<td><input type="number" min="18" max="150" name="edad" id="edad" required></td> <!-- Utilizando la clausula required, se obliga al usuario a ingresar los datos. -->	
 			</tr>
 			<tr>
-				<td><label for="pais">Pa�s</label></td>
+				<td><label for="pais">País</label></td>
 				<td>
 					<select name="pais" id="pais"> <!-- Se crea un elemento select, para desplegar un menu con opciones de paises. -->					
 						<option>Chile</option>
-						<option>Per�</option>
+						<option>Perú</option>
 						<option>Argentina</option>
-						<option>M�xico</option>
+						<option>México</option>
 						<option>Colombia</option>
 					</select>
 				</td>
 			</tr>
 			<tr>
-				<td>Tecnolog�a</td>
+				<td>Tecnología</td>
 				<td>
 					<label><input type="radio" name="tecnologia" value="Java" id="tecnologia_0" required>Java</label><br/> 
 					<label><input type="radio" name="tecnologia" value="PHP" id="tecnologia_1" required>PHP</label><br/> 
